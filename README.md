@@ -1,24 +1,38 @@
-# Vje-tina-2015---Projekt
-Project for c#
+# VjeÅ¡tina-2015 - Projekt: LAN SoundStream
+Project for C#
 
-Projekt: <b>LAN SoundStream</b>
+### Projekt
 
-Aplikacija za Windows 10 pomoæu koje je moguæi stream zvuka sa jednog raèunala/mobitela na drugo raèunalo/mobitel preko lokalne mree.
+UWP Aplikacija za Windows 10 pomoÄ‡u koje je omoguÄ‡en stream zvuka sa jednog raÄunala/mobitela na drugo raÄunalo/mobitel preko lokalne mreÅ¾e.
 
-(U daljnjem tekstu pod "raèunalo" se misli na ureğaj koji ima instaliran Windows 10, bilo mobitel ili raèunalo (ili nešto treæe?))
+Napomena: U daljnjem tekstu pod "raÄunalo" se misli na ureÄ‘aj koji ima instaliran Windows 10, bilo mobitel ili raÄunalo (ili neÅ¡to treÄ‡e?).
 
-Recimo da imamo raèunalo koje nema zvuènu karticu ili je pokvarena. Umjesto kupnje nove zvuène kartice, što je skupo ili nezgrapno (recimo ako je u pitanju laptop), a imate drugo raèunalo na raspolaganju koje ima funkcionalnu zvuènu karticu, i oba raèunala su umreena, moemo instalirati ovaj program na oba raèunala, postaviti da jedno bude izvor (source) zvuka (nepotpuno funkcionalno raèunalo), a drugo odredište (destination) zvuka (funkcionalno raèunalo) i time imati omoguæen zvuk na nefunkcionalnom raèunalu.
+### Primjer
+Recimo da imamo raÄunalo koje nema zvuÄnu karticu ili je pokvarena. Umjesto kupnje nove zvuÄne kartice, Å¡to je skupo i/ili nezgrapno (recimo ako je u pitanju laptop), a imate na raspolaganju drugo raÄunalo koje ima funkcionalnu zvuÄnu karticu i oba raÄunala su umreÅ¾ena, moÅ¾emo instalirati ovaj program na oba raÄunala, postaviti da jedno bude izvor (source) zvuka (nepotpuno funkcionalno raÄunalo), a drugo odrediÅ¡te (destination) zvuka (funkcionalno raÄunalo) i time imati omoguÄ‡en zvuÄni izlaz na nefunkcionalnom raÄunalu.
 
-Program bi imao dva naèina rada: za izvor i za odredište zvuka.
-//PROBLEM: izvor zvuka = raèunalo koje šalje zvuk drugome ili raèunalo koje emitira zvuk koji primi od drugog raèunala? rješenje: sender i receiver? igra s nazivima!!
+### Detalji
+Program bi imao dva naÄina rada: 
+* za izvor zvuka
+* za odrediÅ¡te zvuka.
 
-Odredišnim naèinom rada bi u poèetku odredišno raèunalo bilo dostupno na lokalnoj mrei i èekalo da se neko izvorišno raèunalo povee s njim.
 
-Izvorišnim naèinom rada bi se u poèetku otvorio popis dostupnih odredišnih raèunala i moguænost odabira jednog od njih.
-//FUTURE PLANS: password protected connection?
-//FUTURE PLANS: moguænost odabira više raèunala?
 
-Jednom kada su raèunala povezana moe zapoèeti slanje streama zvuka s izvorišnog na odredišno raèunalo, koje traje dok god postoji mrena povezanost raèunala.
+OdrediÅ¡nim naÄinom rada bi u poÄetku odrediÅ¡no raÄunalo bilo dostupno na lokalnoj mreÅ¾i i Äekalo da se neko izvoriÅ¡no raÄunalo poveÅ¾e s njim.
 
-Moguæe je mijenjanje glasnoæe i izvora i zvuka.
-//FUTURE PLANS: kvaliteta zvuka?
+
+
+Jednom kada su raÄunala povezana moÅ¾e zapoÄeti slanje streama zvuka s izvoriÅ¡nog na odrediÅ¡no raÄunalo, koje traje dok god postoji mreÅ¾na povezanost raÄunala.
+
+### Problemi:
+1. nazivi: izvor zvuka = raÄunalo koje Å¡alje zvuk drugome ili raÄunalo koje emitira zvuk koji primi od drugog raÄunala? ponuÄ‘ena rjeÅ¡enja:
+   * emitter i receiver?
+   * origin i clone?
+   * source i destination?
+
+### Planovi za buduÄ‡nost:
+* izvoriÅ¡nim naÄinom rada bi se u poÄetku otvorio popis dostupnih odrediÅ¡nih raÄunala i moguÄ‡nost odabira jednog od njih
+* promjena glasnoÄ‡e i izvora i zvuka
+* povezivanje osigurano lozinkom
+* moguÄ‡nost odabira viÅ¡e raÄunala istovremeno
+* promjena kvalitete zvuka
+* daleka buduÄ‡nost: izrada aplikacije za sve platforme (iOS, Android, Windows Phone, MacOS, Linux...); naglasak na Raspberry PI - idealan, Äak i novi PI Zero!
