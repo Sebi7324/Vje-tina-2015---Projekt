@@ -16,12 +16,11 @@ Program bi imao dva načina rada:
 * za odredište zvuka.
 
 
+Izvorišnim načinom rada bi se pomoću lokalne IP adrese (koju upišemo na početku) ostvarila mrežna veza između dva računala i bilo omogućeno streamanje zvuka s tog računala.
 
-Odredišnim načinom rada bi u početku odredišno računalo bilo dostupno na lokalnoj mreži i čekalo da se neko izvorišno računalo poveže s njim.
+Odredišnim načinom rada bi odredišno računalo bilo dostupno na lokalnoj mreži i čekalo da se neko izvorišno računalo poveže s njim. Jednom kad se poveže bi računalo zvuk koji dobije slalo na vlastiti zvučni izlaz.
 
-
-
-Jednom kada su računala povezana može započeti slanje streama zvuka s izvorišnog na odredišno računalo, koje traje dok god postoji mrežna povezanost računala.
+Veza i stream traju dok god postoji mrežna povezanost računala ili dok se veza ne prekine ručno.
 
 ### Problemi:
 1. nazivi: izvor zvuka = računalo koje šalje zvuk drugome ili računalo koje emitira zvuk koji primi od drugog računala? ponuđena rješenja:
